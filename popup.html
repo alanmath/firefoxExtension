@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plugin Segurança</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+
+<body>
+    <h1>Plugin Segurança</h1>
+
+    <div id="scoreSite">Score: --</div>
+
+    <div id="connectionsCount">Nenhuma conexão detectada.</div>
+    <button id="toggleConnectionsButton" style="display: none;">Mostrar Conexões</button>
+    <div id="connectionsDropdown" style="display: none;">
+        <ul id="connectionsResults"></ul>
+    </div>
+
+    <div id="servicesCount">Nenhum serviço suspeito detectado.</div>
+    <button id="toggleServicesButton" style="display: none;">Mostrar Serviços Suspeitos</button>
+    <div id="servicesDropdown" style="display: none;">
+        <ul id="servicesResults"></ul>
+    </div>
+
+    <div id="cookiesCount">Nenhum cookie de primeira parte detectado.</div>
+    <button id="toggleCookiesButton" style="display: none;">Mostrar Cookies - 1 parte</button>
+    <div id="cookiesDropdown" style="display: none;">
+        <ul id="cookiesResults"></ul>
+    </div>
+
+    <div id="cookiesCount3">Nenhum cookie de terceira parte detectado.</div>
+    <button id="toggleCookiesButton3" style="display: none;">Mostrar Cookies - 3 parte</button>
+    <div id="cookiesDropdown3" style="display: none;">
+        <ul id="cookiesResults3"></ul>
+    </div>
+
+    <div id="localStorageCount">Nenhum dado armazenado no Local Storage.</div>
+    <button id="toggleLocalStorageButton" style="display: none;">Mostrar Local Storage</button>
+    <div id="localStorageDropdown" style="display: none;">
+        <ul id="localStorageResults"></ul>
+    </div>
+
+    <div id="sessionStorageCount">Nenhum dado armazenado no Session Storage.</div>
+    <button id="toggleSessionStorageButton" style="display: none;">Mostrar Session Storage</button>
+    <div id="sessionStorageDropdown" style="display: none;">
+        <ul id="sessionStorageResults"></ul>
+    </div>
+
+    <script src="popup.js"></script>
+</body>
+
+</html>
